@@ -1,0 +1,4 @@
+[azure]
+disabled = true
+[gcloud]
+disabled = true
