@@ -14,10 +14,13 @@ install_fzf () {
 
 install_starship () {
   sh -c "$(curl -fsSL https://starship.rs/install.sh)" -- --bin-dir /home/gitpod/.local/bin -y
+  mkdir -p /home/gitpod/.config
+  mkdir -p /home/gitpod/.cache/starship
+  mv ~/.config/starship.toml /home/gitpod/.config/starship.toml
 }
 
 
 mkdir -p /home/gitpod/.local/bin
-mkdir -p /home/gitpod/.cache/starship
+mv ~/.zshrc /home/gitpod/.zshrc
 install_fzf
 install_starship
