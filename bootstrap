@@ -1,7 +1,6 @@
 #!/bin/bash
 set -e
 
-
 install_fzf () {
   FZF_URL=https://github.com/junegunn/fzf/releases/download/0.29.0/fzf-0.29.0-linux_amd64.tar.gz
   curl -L \
@@ -9,7 +8,6 @@ install_fzf () {
     "$FZF_URL"
   tar xzvf fzf.tar.gz
   mv ./fzf /home/gitpod/.local/bin/
-
 }
 
 install_starship () {
@@ -21,6 +19,6 @@ install_starship () {
 
 
 mkdir -p /home/gitpod/.local/bin
-mv ~/.zshrc /home/gitpod/.zshrc
+mv ./.zshrc /home/gitpod/.zshrc
 install_fzf
 install_starship
