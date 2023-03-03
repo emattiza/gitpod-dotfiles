@@ -1,0 +1,1 @@
+hash starship && eval "$(starship init bash)"
