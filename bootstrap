@@ -18,5 +18,6 @@ install_starship () {
 
 mkdir -p /home/gitpod/.local/bin
 mv /home/gitpod/.dotfiles/.zshrc /home/gitpod/.zshrc
+mv /home/gitpod/.dotfiles/.bashrc.d/10-starship /home/gitpod/.bashrc.d/10-starship
 install_fzf
 install_starship
